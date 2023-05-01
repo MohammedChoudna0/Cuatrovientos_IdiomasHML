@@ -1,5 +1,10 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
+@media screen and (max-width: 768px) {
+  .redes-sociales-desktop {
+    display: none;
+  }
+}
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -9025,7 +9030,7 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 }
 
 .has-background-primary {
-  background-color: #00d1b2 !important;
+  background-color:beige !important;
 }
 
 .has-text-primary-light {
