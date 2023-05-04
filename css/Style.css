@@ -1,5 +1,10 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
+.has-background-p {
+  background-image: url('#');
+  background-size: cover; /* Esto ajusta el tamaño de la imagen para que cubra toda la sección */
+  background-position: center; /* Esto ajusta la posición de la imagen para que esté centrada en la sección */
+}
 @media screen and (max-width: 768px) {
   .redes-sociales-desktop {
     display: none;

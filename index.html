@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
     <link rel="stylesheet" href="plugins/icofont/icofont.css">
     <script src="js/JavaScript.js"> </script>
+    
 </head>
 <body>
     <header class=" has-background-primary has-text-weight-bold"> 
@@ -35,7 +36,7 @@
                   </div>
                 <div class="column header-top-right has-text-right-tablet has-text-centered-mobile">
                   <a id="" href="./html/">
-                    <p class="has-text-weight-bold "><i class="icofont-location-pin"></i><span>Localizanos</span></p>
+                    <p class="has-text-weight-bold "><i class="icofont-location-pin pr-1"></i><span>Localizanos</span></p>
                   </a>
                 </div>
               </div>
@@ -52,32 +53,71 @@
         
             <div id="navbarIndex" class="navbar-menu  ">
               <div class="navbar-end mr-6">
-                <a class="navbar-item " href="#">
-                  <span>CURSOS</span>
-                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">CURSOS</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="./html/voluntariado.html">1</a>
+                    <a class="navbar-item" href="./html/donaciones.html">2</a>
+                  </div>
+                </div>
                 <a class="navbar-item" href="#">
                   <span>MATRICULA</span>
                 </a>
                 <a class="navbar-item" href="#">
                   <span>NUESTRO EQUIPO</span>
                 </a>
-                <a class="navbar-item" href="#">
-                  <span>CONSURSOS</span>
-                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">EMPRESAS</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="./html/voluntariado.html">1</a>
+                    <a class="navbar-item" href="./html/donaciones.html">2</a>
+                  </div>
+                </div>
                 <a class="navbar-item" href="#">
                   <span>OXFORD</span>
                 </a>
               </div>
             </div>
         </nav>
-        
-
-    </header>
+      </header>
     <main>
-       
+      <section class="hero is-white is-flex has-background-p ">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns reverse-columns is-flex-tablet is-flex-desktop">
+              <div class="column is-10-mobile" >
+                <h1 class="title is-1 mt-6">
+                  Cuatrovientos Idiomas
+                </h1>
+                <div class="buttons is-flex">
+                  <button class="button">Clase de prueba</button>
+                  <button class="button">Matriculate ahora</button>
+                </div>
+              </div>
+              <div data-aos="flip-right" class="column is-10-mobile is-6-desktop is-7-widescreen is-right-aligned ">
+                <figure class="image mb-6 ml-6">
+                  <img src="./images/portada.png" style="width: 70%;">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+	    offset: 120,
+	    delay: 0,
+	    duration: 400,
+	    easing: 'ease'
+  });
+    </script>
 </body>
 </html>

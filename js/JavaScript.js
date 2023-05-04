@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Cambiar la clase "is-active" en ambos el botón "navbar-burger" y el menú "navbar-menu"
         el.classList.toggle('is-active');
         $target.classList.toggle('is-active');
-
       });
     });
   }
