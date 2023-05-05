@@ -5416,6 +5416,9 @@ button.dropdown-item.is-active {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: white;
   min-height: 3.25rem;
   position: relative;
@@ -11757,6 +11760,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
+  /*no repeat*/
+  background-size: cover;
+  background-position: top center;
+  background-image: url("../images/edificioCuatroVientos.jpg");
+  background-color: #ffffff;
   align-items: center;
   display: flex;
 }
@@ -11771,6 +11779,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero.is-fullheight {
+  
   min-height: 100vh;
 }
 
@@ -11855,7 +11864,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #ffd970;
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
