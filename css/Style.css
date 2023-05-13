@@ -1,15 +1,6 @@
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-.has-background-p {
-  background-image: url('#');
-  background-size: cover; /* Esto ajusta el tamaño de la imagen para que cubra toda la sección */
-  background-position: center; /* Esto ajusta la posición de la imagen para que esté centrada en la sección */
-}
-@media screen and (max-width: 768px) {
-  .redes-sociales-desktop {
-    display: none;
-  }
-}
+
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -1016,7 +1007,7 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 
 .button.is-primary {
-  background-color: #00d1b2;
+  background-color: #b2e2f2;
   border-color: transparent;
   color: #fff;
 }
@@ -2429,7 +2420,7 @@ div.icon-text {
 }
 
 .notification.is-primary {
-  background-color: #00d1b2;
+  background-color: #b2e2f2;
   color: #fff;
 }
 
