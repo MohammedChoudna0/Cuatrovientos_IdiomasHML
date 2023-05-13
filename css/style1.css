@@ -1,8 +1,9 @@
-.has-background-p {
-    background-image: url('#');
-    background-size: cover; /* Esto ajusta el tamaño de la imagen para que cubra toda la sección */
-    background-position: center; /* Esto ajusta la posición de la imagen para que esté centrada en la sección */
-  }
+#portada {
+  background-image: url('../images/formacionEmpresas.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat ;
+}
   @media screen and (max-width: 768px) {
     .redes-sociales-desktop {
       display: none;
@@ -106,6 +107,10 @@
 #logo4V{
   height: 50px;
 }
+#logo4VFooter{
+  width: 250px;
+  height:auto;
+}
 .logos_footer{
 height: 75px;
 }
@@ -204,5 +209,48 @@ height: 75px;
     color: rgba(201, 214, 16, 0.795);
     font-size: 70px;
   }
+  
+  #barraFooter{
+    width: 100%;
+
+  }
+  .fotoViajes {
+    transform: skew(10deg, -5deg);
+  }
+
+  .botonTest {
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .botonTest::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+  }
+  
+  .botonTest:hover {
+    transform: scale(1.05);
+  }
+  
+  .botonTest:hover::before {
+    left: 0;
+  }
+  
+  .botonTest i {
+    transition: all 0.3s;
+  }
+  
+  .botonTest:hover i {
+    transform: rotate(180deg);
+  }
+  
   
   
