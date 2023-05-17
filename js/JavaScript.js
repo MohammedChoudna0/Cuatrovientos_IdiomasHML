@@ -1,3 +1,31 @@
+ // Obtener referencia al campo de entrada de fecha de nacimiento y los campos del tutor o los padres
+ const fechaNacimientoInput = document.getElementById('fechaNacimiento');
+ const camposTutor = document.getElementById('camposTutor'); // ID del contenedor de los campos del tutor o los padres
+ 
+ // Ocultar los campos del tutor o los padres al cargar la página
+ camposTutor.style.display = 'none';
+ 
+ // Escuchar el evento de cambio en el campo de entrada de fecha de nacimiento
+ fechaNacimientoInput.addEventListener('change', () => {
+   const fechaNacimiento = new Date(fechaNacimientoInput.value);
+   const hoy = new Date();
+ 
+   // Calcular la diferencia de tiempo en milisegundos entre la fecha actual y la fecha de nacimiento
+   const edadMilisegundos = hoy - fechaNacimiento;
+ 
+   // Convertir la diferencia de tiempo a años
+   const edadAnios = Math.floor(edadMilisegundos / (1000 * 60 * 60 * 24 * 365.25));
+ 
+   // Mostrar u ocultar los campos del tutor o los padres según la edad
+   if (edadAnios < 18) {
+     camposTutor.style.display = 'block'; // Mostrar campos del tutor o los padres
+   } else {
+     camposTutor.style.display = 'none'; // Ocultar campos del tutor o los padres
+   }
+ });
+ 
+
+
 
 window.onscroll = function() {
     myFunction();
@@ -137,14 +165,38 @@ window.onscroll = function() {
   });
 
 
-  $(document).ready(function() {
-    $('.carousel').slick({
-      autoplay: true,    // Activar el giro automático
-      autoplaySpeed: 3000,    // Velocidad de cambio de imagen (en milisegundos)
-      arrows: false,    // Ocultar las flechas de navegación
-      dots: false    // Ocultar los indicadores de navegación
-    });
-  });
-
-
+// Obtener referencias a los elementos del formulario
+function showFileName(event) {
+  const input = event.target;
+  const fileNameContainer = document.getElementById('file-name');
+  fileNameContainer.textContent = input.files[0].name;
+}
   
+
+function actualizarNiveles() {
+  const idiomaSelect = document.getElementById('idiomaSelect');
+  const nivelSelect = document.getElementById('nivelSelect');
+
+  // Obtener el idioma seleccionado
+  const idiomaSeleccionado = idiomaSelect.value;
+
+  // Definir los niveles disponibles para cada idioma
+  const niveles = {
+    ingles: ['A2', 'B1.1', 'B1.2', 'B1', 'B2.1', 'B2.2', 'B2', 'C1', 'Speaking'],
+    frances: ['A1', 'B1', 'B2']
+};
+  // Obtener los niveles disponibles para el idioma seleccionado
+  const nivelesDisponibles = niveles[idiomaSeleccionado] || [];
+
+  // Limpiar las opciones anteriores
+  nivelSelect.innerHTML = '<option selected disabled hidden>Selecciona..</option>';
+
+  // Agregar las nuevas opciones de nivel
+  nivelesDisponibles.forEach(nivel => {
+      const opcion = document.createElement('option');
+      opcion.text = nivel;
+      nivelSelect.add(opcion);
+  });
+}
+
+
