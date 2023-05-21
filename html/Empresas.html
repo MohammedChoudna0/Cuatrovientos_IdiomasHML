@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Cuatrovientos Idiomas es una academia de idiomas en Pamplona que ofrece cursos de inglés y francés. Aprende con nuestros profesores nativos y experimentados. Ofrecemos clases para todos los niveles, desde principiantes hasta avanzados. Contáctanos para más información.">
+    <meta name="author" content="Lucía_Juan_Mohammed">
+
+    <title>Cuatrovientos Idiomas</title>
+    <link rel="icon" type="image/png" href="../images/logoPestaña.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome -->
+    <!--Boton Lucia-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Agrega la biblioteca CountTo -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="../plugins/icofont/icofont.css">
+    <link rel="stylesheet" href="../css/style1.css">
+
+
+</head>
+
+<body>
+    <header class="has-background-primary has-text-weight-bold">
+        <div class="container mb-1">
+            <div class="columns is-gapless is-justify-content-space-between is-align-items-center "
+                id="header-top-info">
+                <div class="column is-6-desktop is-4-tablet has-text-left-desktop has-text-centered-mobile">
+                    <div class="header-top-info">
+                        <a href="tel:+23-345-67890"><i class="icofont-ui-call mr-2"></i><span>+34 948 31 55
+                                58</span></a>
+                        <a href="mailto:idiomas@cuatrovientos.org"><i
+                                class="icofont-email mr-2 ml-5"></i><span>idiomas@cuatrovientos.org</span></a>
+                    </div>
+                </div>
+                <div class="columns is-4-desktop is-8-tablet has-text-centered-mobile redes-sociales-desktop ">
+                    <div class=" column has-text-right-tablet ">
+                        <a href="https://www.facebook.com/cuatrovientos.idiomas/?locale=es_ES"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://es.linkedin.com/company/cuatrovientos-idiomas"><i
+                                class="icofont-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@alviento"><i class="fab fa-youtube"></i> </a>
+                    </div>
+                    <div class="column header-top-right has-text-right-tablet has-text-centered-mobile">
+                        <a href="https://goo.gl/maps/9du5MJUYJKDumgRL6">
+                            <p class="has-text-weight-bold "><i
+                                    class="icofont-location-pin pr-1"></i><span>Localizanos</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-brand">
+                <div class="ml-6 is-centered  ">
+                    <a href="#">
+                        <img id="logo4V" src="../images/logo4V.png" alt="Logo Principal" class="pt-1">
+                    </a>
+                </div>
+                <div class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false"
+                    data-target="navbarIndex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <div id="navbarIndex" class="navbar-menu ">
+                <div class="navbar-end mr-6">
+                    <a class="navbar-item" href="../index.html">
+                        <span>INICIO</span>
+                    </a>
+                    <a class="navbar-item" href="./cursos.html">
+                      <span>CURSOS</span>
+                  </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">EXÁMENES OFICIALES</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="#">Oxford y Cambridge</a>
+                            <a class="navbar-item" href="#">DELF y DALF</a>
+                        </div>
+                    </div>
+                    <a class="navbar-item" href="#">
+                        <span>EMPRESAS</span>
+                    </a>
+
+                    <a href="./Matricula.html" class="button is-primary is-outlined mt-2 ml-2">
+                        <span class="link-title">Matriculate</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero is-medium" id="portadaEmpresas">
+      <div class="hero-body">
+        <p class="title is-3 has-text-centered has-text-white">
+          <span class="highlight">Cursos a medida</span> para las empresas
+        </p>
+        <p class="subtitle has-text-centered">
+          <button onclick="openModal()" class="button is-success is-medium is-outlined">Inscríbete</button>
+        </p>
+      </div>
+    </div>
+    
+    
+        <div class="section">
+          <div class="container">
+            <div id="modal" class="modal">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head">
+                  <p class="modal-card-title">Contact Us</p>
+                  <button onclick="closeModal()" class="delete" aria-label="close"></button>
+                </header>
+                <div class="modal-card-body">
+                  <form id="contact-form">
+                    <div class="field">
+                      <label class="label">Name</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Enter your name" name="name" required>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control">
+                        <input class="input" type="email" placeholder="Enter your email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Message</label>
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Enter your message" name="message" required></textarea>
+                      </div>
+                    </div>
+                    <button class="button is-success is-fullwidth" type="submit">Submit</button>
+                  </form>
+                </div>
+                <footer class="modal-card-foot">
+                  <button onclick="closeModal()" class="button is-danger">Cancel</button>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <figure class="image is-4by3" data-aos="fade-right" >
+            <img src="../images/Fotos2/FORMACIÓN.JPG" alt="Empresas" class="mt-2 rounded-image" id="imagenEmpresas" >
+          </figure>
+        </div>
+        
+        <div class="column is-half" data-aos="fade-left">
+          <h3 class="title is-4 ">Ayudamos a empresas</h3>
+          <p class="subtitle is-size-5 mt-2">
+            En Cuatrovientos Idiomas, nos especializamos en brindar cursos de inglés personalizados para empresas.
+            Nuestro enfoque se basa en las necesidades específicas de cada organización, adaptando nuestros programas de
+            enseñanza para garantizar resultados efectivos.
+          </p>
+          <h4 class="subtitle is-size-6">Beneficios de nuestra formación para empresas:</h4>
+          <ul class="benefits-list">
+            <li><i class="fas fa-check mr-2"></i> Mejora de la comunicación oral y escrita en inglés.</li>
+            <li><i class="fas fa-check mr-2"></i> Desarrollo de habilidades comunicativas en entornos profesionales.</li>
+            <li><i class="fas fa-check mr-2"></i> Programas de enseñanza personalizados según sus necesidades.</li>
+            <li><i class="fas fa-check mr-2"></i> Instructores altamente calificados y clases dinámicas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ">
+    <div class="column is-four-fifths is-offset-1">
+      <h3 class="title is-4 has-text-centered">Nuestros servicios</h3>
+      <div class="columns is-multiline">
+        <div class="column is-half" data-aos="fade-down-right">
+          <div class="box servicio" id="servicio1">
+            <div class="content is-flex is-flex-direction-column has-text-centered mt-6 pt-6">
+              <h4 class="title is-4">Traducción y localización:</h4>
+              <p class="subtitle has-text-centered">Ofrecemos traducciones precisas y culturalmente adaptadas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half" data-aos="fade-down-left">
+          <div class="box servicio" id="servicio2">
+            <div class="content is-flex is-flex-direction-column has-text-centered mt-6 pt-6">
+              <h4 class="title is-4">Clases de idiomas personalizadas:</h4>
+              <p class="subtitle has-text-centered">Centradas en mejorar las habilidades de comunicación oral y escrita de los empleados.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half" data-aos="fade-up-right">
+          <div class="box servicio" id="servicio3">
+            <div class="content is-flex is-flex-direction-column has-text-centered mt-6 pt-6">
+              <h4 class="title is-5">Preparación de exámenes internacionales:</h4>
+              <p class="subtitle has-text-centered">Ayudamos a los empleados a obtener certificaciones reconocidas internacionalmente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half" data-aos="fade-up-left">
+          <div class="box" id="servicio4">
+            <div class="content is-flex is-flex-direction-column has-text-centered mt-6 pt-2">
+              <h4 class="title is-5">Inmersión lingüística y cultural:</h4>
+              <p class="subtitle has-text-centered">Brindamos programas de inmersión personalizados para mejorar habilidades lingüísticas y comprensión de la cultura y los negocios internacionales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<hr>
+
+  <section class="section Bandacontactanos" data-aos="flip-down">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <img src="../images/logo4V.png" alt="Logo de Cuatrovientos Idiomas">
+          <p class="subtitle">
+            Cuatrovientos Idiomas ofrece cursos de inglés a empresas para mejorar las habilidades lingüísticas de los
+            empleados y potenciar su éxito en el entorno empresarial internacional.
+          </p>
+        </div>
+        <div class="column">
+          <div class="info-band">
+            <h3 class="title is-4">Contáctanos</h3>
+            <p class="subtitle">
+              Teléfono: <strong>+1234567890</strong><br>
+              Correo electrónico: <strong>info@cuatrovientosidiomas.com</strong><br>
+              Dirección: <strong>Calle Principal 123, Ciudad, País</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column" data-aos="fade-right">
+          <h3 class="title is-4">Nuestro enfoque</h3>
+          <p class="subtitle mt-2">
+            En Cuatrovientos Idiomas, entendemos que cada empresa tiene necesidades específicas en cuanto al aprendizaje del inglés. Por eso, nuestros cursos se adaptan a tus requerimientos, con un enfoque en:
+          </p>
+          <ul>
+            <li>
+              <p class="subtitle"><i class="fas fa-check mr-1"></i> Desarrollo de habilidades comunicativas en entornos empresariales.</p>
+            </li>
+            <li>
+              <p class="subtitle"><i class="fas fa-check mr-2"></i> Comprensión auditiva y expresión oral.</p>
+            </li>
+            <li>
+              <p class="subtitle"><i class="fas fa-check mr-2"></i> Escritura y redacción de documentos profesionales.</p>
+            </li>
+            <li>
+              <p class="subtitle"><i class="fas fa-check mr-2"></i> Vocabulario y terminología especializada de tu industria.</p>
+            </li>
+            <li>
+              <p class="subtitle"><i class="fas fa-check mr-2"></i> Negociación y presentaciones efectivas en inglés.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <figure class="image" data-aos="fade-left">
+            <img src="../images/Fotos1/CURSOS_ONLINE.png" alt="Imagen de personas en una clase" id="imagenEmpresas1" class="mt-6">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-4 has-text-centered">Clientes satisfechos</h3>
+      <div class="columns is-multiline is-centered mt-3">
+        <div class="column is-one-quarter" data-aos="fade-up-right">
+          <div class="card cliente-card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <a href="https://helphone.com/" target="_blank">
+                  <img src="../images/ayudaos/helphone.jpg" alt="Logo de cliente 1">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter" data-aos="fade-up">
+          <div class="card cliente-card">
+            <div class="card-image">
+              <figure class="image is-4by3 ">
+                <a href="https://isri.nl/en/?utm_source=bing&utm_medium=cpc&utm_campaign=ISRI%20Wereld&utm_term=%2Bisringhausen&utm_content=ISRI%20Wereld" target="_blank">
+                  <img src="../images/ayudaos/Isringhausen.svg.png" alt="Logo de cliente 2">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter" data-aos="fade-up">
+          <div class="card cliente-card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <a href="https://www.mcp.es/" target="_blank">
+                  <img src="../images/ayudaos/mancomunidad_pamplona.jpeg" alt="Logo de cliente 3">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter" data-aos="fade-up-left">
+          <div class="card cliente-card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <a href="https://www.ticarum.es/" target="_blank">
+                  <img src="../images/ayudaos/ticarum.jpg" alt="Logo de cliente 4">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-4 has-text-centered">Nuestro equipo</h3>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-third" data-aos="fade-up">
+          <figure class="image is-square team-image">
+            <img src="../images/Fotos2/PROFE+ALUMNO.JPG" alt="Foto de miembros del equipo 1">
+          </figure>
+        </div>
+        <div class="column is-one-third" data-aos="fade-up">
+          <figure class="image is-square team-image">
+            <img src="../images/Fotos1/CLASE_INGLÉS.jpg" alt="Foto de miembros del equipo 2">
+          </figure>
+        </div>
+        <div class="column is-one-third" data-aos="fade-up">
+          <figure class="image is-square team-image">
+            <img src="../images/Fotos1/CLASE_FRANCÉS.JPG" alt="Foto de miembros del equipo 3">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  >
+  
+  
+
+  <footer class="section-sm pb-0 border-top border-default is-centered has-text-centered-mobile  has-background-primary">
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <div class="container">
+      <div class="columns is-multiline is-justify-content-space-between">
+        <div class="column is-3-desktop">
+          <a class="mb-2 is-block" href="../index.html">
+            <img id="logo4VFooter" src="../images/logo4V.png" alt="Logo Cuatrovientos">
+          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2992407515208!2d-1.662482324748669!3d42.82429240564793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50929245c3a2c1%3A0xbcafdfb668104a91!2sCuatrovientos%20Idiomas!5e0!3m2!1ses!2ses!4v1683786441140!5m2!1ses!2ses"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+        </div>
+
+        <div class="column is-2-widescreen is-3-desktop is-6 mt-6 ">
+          <h6 class="mb-4">HORARIO SECRETARÍA</h6>
+          <ul class="list-unstyled footer-list">
+            <li>
+              <p>Curso Escolar</p>
+            </li>
+            <li>
+              <p>Lunes a viernes: 9:00 – 14:00 h.</p>
+            </li>
+            <li>
+              <p>Martes: 16:30 – 18:30 h.</p>
+            </li>
+            <li>
+              <p>Teléfono: 948 124129</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column is-2-widescreen is-4-desktop is-6 mt-6">
+          <h6 class="mb-4">DATOS DE CONTACTO</h6>
+          <ul class="list-unstyled footer-list">
+            <li>
+              <p>Av. de San Jorge, 2, 31012 Pamplona, Navarra</p>
+            </li>
+            <li>
+              <p>+34 948 31 55 58</p>
+            </li>
+            <li>
+              <p>idiomas@cuatrovientos.org</p>
+            </li>
+            <li>
+              <p>Contactar vía formulario</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column is-3-desktop has-text-centered mt-4">
+          <a> <img src="../images/logoInnovarse.png" alt="Logo Innovarse" class="logos_footer"></a>
+          <a><img src="../images/logosColabora.png" alt="Logos Colaborar" class="logos_footer"></a>
+          <a><img src="../images/logosColabora1.png" alt="Logos Colaborar1" class="logos_footer"></a>
+          <a><img src="../images/ODS.jpg" alt="ODS" class="logos_footer"></a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container mb-1 has-text-centered has-text-centered-mobile has-background-primary is-12-desktop is-4-tablet is-gapless"
+      id="barraFooter">
+      <p class="content">&copy; 2023 - Design &amp; Develop By <a href="../index.html" target="_blank">Cuatrovientos idiomas</a></p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="../js/JavaScript.js"></script>
+
+</body>
+
+
+</html>

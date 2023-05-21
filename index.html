@@ -12,9 +12,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Font Awesome -->
-
+  <link rel="icon" type="image/png" href="./images/logoPestaña.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--Boton Lucia-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
 
   <!-- Agrega la biblioteca CountTo -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
@@ -26,8 +31,8 @@
   <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
   <script src="./js/slick.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
 </head>
 
@@ -38,7 +43,8 @@
         <div class="column is-6-desktop is-4-tablet has-text-left-desktop has-text-centered-mobile">
           <div class="header-top-info">
             <a href="tel:+23-345-67890"><i class="icofont-ui-call mr-2"></i><span>+34 948 31 55 58</span></a>
-            <a href="mailto:idiomas@cuatrovientos.org"><i class="icofont-email mr-2 ml-5"></i><span>idiomas@cuatrovientos.org</span></a>
+            <a href="mailto:idiomas@cuatrovientos.org"><i
+                class="icofont-email mr-2 ml-5"></i><span>idiomas@cuatrovientos.org</span></a>
           </div>
         </div>
         <div class="columns is-4-desktop is-8-tablet has-text-centered-mobile redes-sociales-desktop ">
@@ -53,22 +59,23 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <div class="ml-6 is-centered  ">
+          <a href="#">
+            <img id="logo4V" src="./images/logo4V.png" alt="Logo Principal" class="pt-1">
+          </a>
         </div>
+        <div class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false"
+          data-target="navbarIndex">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <nav class="navbar" id="navbar">
-          <div class="navbar-brand">
-            <div class="ml-6 is-centered  ">
-              <a href="#">
-                <img id="logo4V" src="./images/logo4V.png" alt="Logo Principal" class="pt-1">
-              </a>
-            </div>
-            <div class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbarIndex">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-        
-          </div>
+
+      </div>
 
 
       <div id="navbarIndex" class="navbar-menu ">
@@ -76,30 +83,22 @@
           <a class="navbar-item" href="#">
             <span>INICIO</span>
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">CURSOS</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#">Francés</a>
-              <a class="navbar-item" href="#">Inglés</a>
-            </div>
-          </div>
-         
-         
-          <a class="navbar-item" href="#">
-            <span>NUESTRO EQUIPO</span>
+          <a class="navbar-item" href="./html/cursos.html">
+            <span>CURSOS</span>
           </a>
+
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">EXÁMENES OFICIALES</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="#">1</a>
-              <a class="navbar-item" href="#">2</a>
+              <a class="navbar-item" href="./html/examenesOficialesIngles.html">OXFORD Y CAMBRIDGE</a>
+              <a class="navbar-item" href="./html/examenesOficialesFrances.html">DELF Y DALF</a>
             </div>
           </div>
-          <a class="navbar-item" href="#">
+          <a class="navbar-item" href="./html/Empresas.html">
             <span>EMPRESAS</span>
           </a>
 
-          <a href="#" class="button is-primary is-outlined mt-2 ml-2">
+          <a href="./html/Matricula.html" class="button is-primary is-outlined mt-2 ml-2">
             <span class="link-title">Matriculate</span>
           </a>
         </div>
@@ -109,18 +108,13 @@
   <main>
     <section class="hero  is-flex is-large " id="portada">
       <div class="hero-body ">
-        <div class="container">
-          <div class="columns ">
-            <div class="column   ">
-              <h1 class="title is-1 pt-0 ">
-                Cuatrovientos Idiomas
-              </h1>
-              <div class="buttons is-flex">
-                <button class="button is-outlined is-primary">Clase de prueba</button>
-                <button class="button is-outlined is-primary">Matriculate ahora</button>
-              </div>
-            </div>
-          </div>
+        <h1 class="title is-1 is-size-1-desktop is-spaced pt-0 has-text-centered mb-6 has-text-danger-dark">
+          Cuatrovientos Idiomas
+        </h1>
+        <div class="buttons is-flex is-centered">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6L4ZGRYLjwjnZ18K5cGZ57KDXfTJDPHZCzRw6a6RTCJFbGg/viewform" class="button is-danger"><i class="fas fa-desktop mr-2"></i>Clase de prueba</a>
+
+          <a href="./html/Matricula.html" class="button is-info"><i class="fas fa-desktop mr-2"></i>Matrículate ahora</a>
         </div>
       </div>
     </section>
@@ -136,24 +130,24 @@
                   <p class="title"> ADULTOS Y JÓVENES </p>
                 </div>
                 <p class="subtitle ">
-                  Cuatrovientos pone a tu disposición una amplia oferta de cursos especializados durante todo el año. El
-                  único requisito es tener más de 16 años, ya que nuestra academia está especializada en educación para
-                  adultos con cursos personalizados en función de tus necesidades y requisitos. Grupos reducidos.
+                  Cuatrovientos ofrece cursos especializados para adultos con grupos reducidos, sin límite de edad
+                  excepto ser mayor de 16 años.
                 </p>
               </div>
             </div>
           </div>
           <div class="column is-3 is-6-tablet is-3-desktop is-10-mobile">
-            <div class="card wpb_wrapper  " data-aos="zoom-in-down">
+            <div class="card wpb_wrapper" data-aos="zoom-in-down">
               <div class="card-content ">
                 <div class="has-text-centered">
                   <i class="fab fa-wpforms icono_wrapper"></i>
                   <p class="title"> PRUEBA DE NIVEL </p>
                 </div>
                 <p class="subtitle  ">
-                  En Cuatrovientos Idiomas TE AYDAMOS a encontrar el curso que mejor se adapta a tus necesidades.
-                  ¿Cuál es tu nivel de inglés? Averígualo con nuestra prueba de nivel para nuevos alumnos.
+                  ¿Sabrías decirnos cual es tu nivel de inglés o de francés? Averígualo con nuestra prueba de nivel para
+                  nuevos alumnos.
                 </p>
+
               </div>
             </div>
           </div>
@@ -165,8 +159,7 @@
                   <p class="title">Exámenes oficiales</p>
                 </div>
                 <p class="subtitle">
-                  En Cuatrovientos Idiomas tenemos una dilatada experiencia en la preparación de los exámenes oficiales
-                  más demandados: Cambridge, OXFORD , DALF , DELF ...
+                  Tenemos una gran experiencia en la preparación de los exámenes oficiales más demandados.
                 </p>
               </div>
             </div>
@@ -179,9 +172,8 @@
                   <p class="title">HORARIO FLEXIBLE</p>
                 </div>
                 <p class="subtitle">
-                  Cuatrovientos pone a tu disposición una amplia oferta de cursos especializados durante todo el año. El
-                  único requisito es tener más de 16 años, ya que nuestra academia está especializada en educación para
-                  adultos con cursos personalizados en función de tus necesidades y requisitos. Grupos reducidos.
+                  En Cuatrovientos idiomas , ofrecemos horarios flexibles y nos adaptamos a tus necesidades y
+                  disponibilidad.
                 </p>
               </div>
             </div>
@@ -189,7 +181,6 @@
         </div>
       </div>
     </div>
-
     <!--FIN DE SECCION-->
     <section class="section">
       <div class="container ">
@@ -218,146 +209,176 @@
                       </ul>
 
                       <br>
-                      <a href="#" class="button is-danger"><i class="fas fa-desktop mr-2"></i>Más información</a>
+                      <a href="./html/Matricula.html" class="button is-danger"><i class="fas fa-desktop mr-2"></i>Más
+                        información</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <hr>
-            <section class="section  mb-6 " id="stats_section">
-              <div class="container">
-                <div class="vc_custom_heading has-text-centered " data-aos="zoom-in-down">
-                  <h2 class="title is-2">DATOS DEL CENTRO</h2>
-                </div>
-                <div class="columns is-multiline mt-6 has-text-weight-bold">
-                  <div class="column is-3 " data-aos="zoom-in-down">
-                    <div class=" has-text-centered">
-                      <div class="icon">
-                        <i class="fas fa-globe icono_wrapper"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-primary">
+      <div class="container ">
+        <div class="columns">
+          <div class="column is-full-mobile">
+            <div class="columns  is-multiline is-centered">
+              <hr>
+              <div class="  mb-6 " id="stats_section">
+                <div class="container">
+                  <div class="vc_custom_heading has-text-centered " data-aos="zoom-in-down">
+                    <h2 class="title is-2">DATOS DEL CENTRO</h2>
+                  </div>
+                  <div class="columns is-multiline mt-6 has-text-weight-bold">
+                    <div class="column is-3 " data-aos="zoom-in-down">
+                      <div class=" has-text-centered">
+                        <div class="icon">
+                          <i class="fas fa-globe icono_wrapper"></i>
+                        </div>
+                        <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter1"></div>
+                        <div class=" h5 is-size-4">Años de experiencia</div>
                       </div>
-                      <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter1"></div>
-                      <div class=" h5 is-size-4">Años de experiencia</div>
+                    </div>
+                    <div class="column is-3" data-aos="zoom-in-down">
+                      <div class=" has-text-centered">
+                        <div class="icon">
+                          <i class="fas fa-users icono_wrapper"></i>
+                        </div>
+                        <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter3"></div>
+                        <div class=" h5 is-size-4">Alumnos matriculados</div>
+                      </div>
+                    </div>
+                    <div class="column is-3" data-aos="zoom-in-down">
+                      <div class=" has-text-centered">
+                        <div class="icon">
+                          <i class="ti-bell icono_wrapper"></i>
+                        </div>
+                        <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter2"></div>
+                        <div class=" h5 is-size-4">% de aprobados</div>
+                      </div>
+                    </div>
+                    <div class="column is-3" data-aos="zoom-in-down">
+                      <div class=" has-text-centered">
+                        <div class="icon">
+                          <i class="fas fa-briefcase icono_wrapper"></i>
+                        </div>
+                        <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter4"></div>
+                        <div class=" h5 is-size-4">horas de clase</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="column is-3" data-aos="zoom-in-down">
-                    <div class=" has-text-centered">
-                      <div class="icon">
-                        <i class="fas fa-users icono_wrapper"></i>
-                      </div>
-                      <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter3"></div>
-                      <div class=" h5 is-size-4">Alumnos matriculados</div>
-                    </div>
+                  <div class="heading_font has-text-centered mt-6">
+                    <a href="./html/cursos.html" class="button is-primary is-outlined">
+                      <i class="fas fa-chalkboard-teacher icon_in_btn mr-2" style="font-size:20px;"></i>
+                      <span class="link-title">Ver nuestros cursos</span>
+                    </a>
                   </div>
-                  <div class="column is-3" data-aos="zoom-in-down">
-                    <div class=" has-text-centered">
-                      <div class="icon">
-                        <i class="ti-bell icono_wrapper"></i>
-                      </div>
-                      <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter2"></div>
-                      <div class=" h5 is-size-4">% de aprobados</div>
-                    </div>
-                  </div>
-                  <div class="column is-3" data-aos="zoom-in-down">
-                    <div class=" has-text-centered">
-                      <div class="icon">
-                        <i class="fas fa-briefcase icono_wrapper"></i>
-                      </div>
-                      <div class="h1 mt-4 is-size-2 has-text-danger-dark" id="stats_counter4"></div>
-                      <div class=" h5 is-size-4">horas de clase</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="heading_font has-text-centered mt-6">
-                  <a href="/cursos" class="button is-primary is-outlined">
-                    <i class="fas fa-chalkboard-teacher icon_in_btn mr-2" style="font-size:20px;"></i>
-                    <span class="link-title">Ver nuestros cursos</span>
-                  </a>
                 </div>
               </div>
-            </section>
-        
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <hr>
+    <div class="section">
+      <div class="container ">
+        <div class="columns">
+          <div class="column is-full-mobile">
+            <div class="columns  is-multiline is-centered">
 
-            <hr>
-            <section>
-            <div class="columns is-multiline ">
-              <div class="column post is-6">
-                <article class="columns is-multiline">
-                  <div class="column is-12 ">
-                    <div class="image-container">
-                      <img src="./images/CursoFrances.jpg" alt="Imagen Francia" class="hover-opacity" id="imagenFrancia"
-                        data-aos="fade-right">
-                      <a href="#" class="image-overlay" id="enlaceFrancia">
-                        <i class="fas fa-external-link-alt is-normal"></i>
-                      </a>
+              <div class="columns is-multiline ">
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 ">
+                      <div class="image-container">
+                        <img src="./images/CursoFrances.jpg" alt="Imagen Francia" class="hover-opacity"
+                          id="imagenFrancia" data-aos="fade-right">
+                        <a href="#" class="image-overlay" id="enlaceFrancia">
+                          <i class="fas fa-external-link-alt is-normal"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="column is-12 featured-content">
-                    <h3 class="title">Cursos de francés </h3>
-                    <p>En Cuatrovientos Idiomas, ofrecemos cursos de francés de alta calidad para ayudarte a alcanzar
-                      tus
-                      objetivos lingüísticos.</p>
-                    <ul>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Profesores nativos altamente cualificados.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Programas de estudio diseñados para tu éxito.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Material didáctico actualizado y recursos de
-                        aprendizaje.
-                      </li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Clases dinámicas y participativas para mejorar tus
-                        habilidades.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Simulacros de exámenes y práctica intensiva para
-                        prepararte.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Asesoramiento personalizado y seguimiento de tu
-                        progreso.
-                      </li>
-                    </ul>
-                    <br>
-                    <a href="#" class="button is-info "><i class="fas fa-desktop mr-2"></i>Más información</a>
-                  </div>
-
-                </article>
-              </div>
-              <div class="column post is-6">
-                <article class="columns is-multiline">
-                  <div class="column is-12 ">
-                    <div class="image-container">
-                      <img src="./images/CursoIngles.jpg" alt="Imagen Inglaterra" id="ImagenEng" class="hover-opacity"
-                        data-aos="fade-left">
-                      <a href="#" class="image-overlay">
-                        <i class="fas fa-external-link-alt is-normal"></i>
-                      </a>
+                    <div class="column is-12 featured-content">
+                      <h3 class="title">Cursos de francés </h3>
+                      <p>En Cuatrovientos Idiomas, ofrecemos cursos de francés de alta calidad para ayudarte a alcanzar
+                        tus
+                        objetivos lingüísticos.</p>
+                      <ul>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Profesores nativos altamente cualificados.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Programas de estudio diseñados para tu éxito.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Material didáctico actualizado y recursos de
+                          aprendizaje.
+                        </li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Clases dinámicas y participativas para mejorar tus
+                          habilidades.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Simulacros de exámenes y práctica intensiva para
+                          prepararte.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Asesoramiento personalizado y seguimiento de tu
+                          progreso.
+                        </li>
+                      </ul>
+                      <br>
+                      <a href="./html/cursos.html" class="button is-info "><i class="fas fa-desktop mr-2"></i>Más
+                        información</a>
                     </div>
-                  </div>
 
-                  <div class="column is-12">
+                  </article>
+                </div>
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 ">
+                      <div class="image-container">
+                        <img src="./images/CursoIngles.jpg" alt="Imagen Inglaterra" id="ImagenEng" class="hover-opacity"
+                          data-aos="fade-left">
+                        <a href="#" class="image-overlay">
+                          <i class="fas fa-external-link-alt is-normal"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="column is-12">
 
 
-                    <h3 class="title">Cursos de inglés </h3>
-                    <p>Nuestro enfoque se centra en brindarte las herramientas necesarias para
-                      comunicarte con fluidez en inglés en diversos contextos.</p>
-                    <p>Inscribete y disfruta :</p>
+                      <h3 class="title">Cursos de inglés </h3>
+                      <p>Nuestro enfoque se centra en brindarte las herramientas necesarias para
+                        comunicarte con fluidez en inglés en diversos contextos.</p>
+                      <p>Inscribete y disfruta :</p>
 
-                    <ul>
+                      <ul>
 
-                      <li><i class="fas fa-chevron-right mr-2"></i>Enfoque práctico en habilidades de conversación,
-                        comprensión auditiva, lectura y escritura.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Clases dinámicas y participativas para mejorar tus
-                        habilidades.</li>
-                      <li><i class="fas fa-chevron-right mr-2"></i>Preparación para exámenes reconocidos
-                        internacionalmente,
-                        como el TOEFL , IELTS y OXFORD.</li>
-                      </li>
-                    </ul>
-                    <br>
-                    <a href="#" class="button is-info"><i class="fas fa-desktop mr-2"></i>Más información</a>
-                  </div>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Enfoque práctico en habilidades de conversación,
+                          comprensión auditiva, lectura y escritura.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Clases dinámicas y participativas para mejorar tus
+                          habilidades.</li>
+                        <li><i class="fas fa-chevron-right mr-2"></i>Preparación para exámenes reconocidos
+                          internacionalmente,
+                          como el TOEFL , IELTS y OXFORD.
+                        </li>
+                      </ul>
+                      <br>
+                      <a href="./html/cursos.html" class="button is-info"><i class="fas fa-desktop mr-2"></i>Más
+                        información</a>
+                    </div>
 
-                </article>
+                  </article>
+                </div>
               </div>
-
-            <div class="columns" id="SeccionPruebaNivel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section has-background-primary">
+      <div class="container ">
+        <div class="columns">
+          <div class="column is-full-mobile">
+            <div class="columns is-multiline is-centered" id="SeccionPruebaNivel">
               <div class="column  is-6 mt-6" data-aos="fade-up">
                 <article class="columns is-multiline">
                   <div class="column is-12 ">
@@ -365,9 +386,10 @@
                   </div>
                   <div class="column is-12   ">
                     <h2 class="title ">Test de nivel inglés</h2>
-                    <p >¿Cuál es tu nivel de inglés? Averígualo con nuestra prueba de nivel para nuevos alumnos.</p>
-    
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5cUvX4QLajZPfalOm0PSDf6PZ-tUiX-A6ffwOqzl_yIl_-g/viewform" class="button is-info mt-5 botonTest"><i class="fas fa-file-alt mr-2"></i>Hacer test</a>
+                    <p>¿Cuál es tu nivel de inglés? Averígualo con nuestra prueba de nivel para nuevos alumnos.</p>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5cUvX4QLajZPfalOm0PSDf6PZ-tUiX-A6ffwOqzl_yIl_-g/viewform"
+                      class="button is-info mt-5 botonTest"><i class="fas fa-file-alt mr-2"></i>Hacer test</a>
                   </div>
                 </article>
               </div>
@@ -380,22 +402,20 @@
                     <h2 class="title ">Prueba de Nivel francés</h2>
                     <p>¿Cuál es tu nivel de francés? Averígualo con nuestra prueba de nivel para nuevos alumnos.</p>
                     <br>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScy9ziI48_1lyFb-oakgfsHs0i7mc6srBJo8Ygn7N6cMavUsQ/viewform" class="button is-info mt-3 botonTest"><i class="fas fa-file-alt mr-2"></i>Hacer test</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScy9ziI48_1lyFb-oakgfsHs0i7mc6srBJo8Ygn7N6cMavUsQ/viewform"
+                      class="button is-info mt-3 botonTest"><i class="fas fa-file-alt mr-2"></i>Hacer test</a>
                   </div>
                 </article>
               </div>
             </div>
-              
-             
-            </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
 
     <section class="section">
-      <h1 class=" title is-3 is-italic has-text-centered">" Vive una experiencia única aprendiendo nuevas idiomas con nosotros "</h1>
+      <h1 class=" title is-3 is-italic has-text-centered">" Vive una experiencia única aprendiendo nuevas idiomas con
+        nosotros "</h1>
       <div class="columns is-multiline">
         <div class="column is-4">
           <figure class="image is-square gallery-image">
@@ -417,7 +437,7 @@
     <!-- Fin de seccion de enlaces -->
 
 
-    <section class="section has-background-primary mt-6">
+    <section class="section  mt-6">
       <div class="container">
         <div class=" has-text-centered">
           <h2 class="title is-2">OPINIONES DE NUESTROS ESTUDIANTES</h2>
@@ -491,7 +511,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -503,12 +522,12 @@
 
 
 
-  <footer class="section-sm pb-0 border-top border-default is-centered has-text-centered-mobile">
+  <footer class="section-sm pb-0 border-top border-default is-centered has-text-centered-mobile has-background-primary">
     <div class="container">
-      <div class="scroll-to-top">
-        <a href="#" class="scroll-link">
-          <i class="fas fa-arrow-circle-up"></i>
-        </a>
+      <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
       </div>
       <div class="columns is-multiline is-justify-content-space-between">
         <div class="column is-3-desktop">
@@ -570,12 +589,12 @@
         <p class="content">&copy; 2023 - Design &amp; Develop By <a href="#" target="_blank">Cuatrovientos idiomas</a>
         </p>
       </div>
-
+    </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="./js/slick.js"></script>
+  <script src="./js/slick/slick.js"></script>
   <script src="js/JavaScript.js"></script>
 
 

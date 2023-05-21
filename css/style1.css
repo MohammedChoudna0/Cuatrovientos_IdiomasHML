@@ -5,6 +5,7 @@
   background-position: center center;
   background-repeat: no-repeat ;
 }
+
   @media screen and (max-width: 768px) {
     .redes-sociales-desktop {
       display: none;
@@ -252,3 +253,432 @@ height: 75px;
   .botonTest:hover i {
     transform: rotate(180deg);
   }
+
+
+
+  /*css hidalgo*/
+  #cabezeraEmpresa{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/images/formacionEmpresas.jpg);
+
+  }
+  @keyframes moveUp2 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  #servicio1{
+    padding: 20px; /* Espacio interno dentro de cada tarjeta */
+    border-radius: 0 50% 0 ;
+    height: 300px;
+  }
+  #servicio1:hover{
+    animation: moveUp2 1.4s ;
+    background-color:  #f0f99e;
+
+  }
+  #servicio2{
+   background-color:  #ed4b50;
+
+  }
+  #servicio2:hover{
+    animation: moveUp2 1.4s ;
+    background-color:  #e93339;
+  }
+  #servicio3{
+    background-color:  #6dfda7;
+  }
+  #servicio3:hover{
+    animation: moveUp2 1.4s ;
+    background-color:  #4dfc8f;
+  }
+  #servicio4{
+    background-color:  #9d93e9;
+    padding: 20px; /* Espacio interno dentro de cada tarjeta */
+    border-radius: 0 50% 0 ;
+    height: 300px;
+  }
+  #servicio4:hover{
+    animation: moveUp2 1.4s ;
+    background-color:  #7d73e9;
+  }
+
+  .Bandacontactanos{
+    background-color: #a3a3a3;
+    font-family: sans-serif;
+  }
+  .limit-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .imagenesEmpresas:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .servicio{
+    overflow: hidden;
+  }
+  #portadaEmpresas {
+    background-image: url('../images/formacionParaEmpresas.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat ;
+  }
+
+  #portadaEmpresas .title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #portadaEmpresas .highlight {
+    color: #ffd700;
+    font-style: italic;
+  }
+  
+  .highlight{
+    color: #ffb700;
+    font-style: italic;
+    font-size: 35px;
+
+  }
+  #portadaEmpresas .subtitle {
+    margin-top: 20px;
+  }
+  
+  #portadaEmpresas .button {
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #portadaEmpresas .button:hover {
+    background-color: #00bfa5;
+    color: white;
+  }
+
+  #imagenEmpresas{
+   object-fit: cover; border-radius: 50px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 80%;
+  }
+  #imagenEmpresas1{
+    object-fit: cover; border-radius: 50px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 10%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .team-image {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffee00;
+  }
+  
+  
+  .team-image:hover {
+    transform: scale(1.1);
+  }
+
+  /*css hidalgo2*/
+
+
+  #portadaMatricula {
+    background-image: url('../images/matriculacionOn.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat ;
+  }
+ 
+
+  .formulario {
+    display: none;
+}
+
+.formulario.active {
+    display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*CURSOS*/
+/*Botón de Bajada*/
+
+@media screen and (max-width: 420px) {
+  .isa_laptop {
+      display: none!important;
+  }
+  .landing-bg-mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+  }
+}
+@media screen and (min-width: 421px) {
+  .isa_mobile {
+     display: none!important;
+  }
+}
+:root {
+  --black: #080808;
+  --black-blue: #1f2029;
+}
+.progress-wrap {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.progress-wrap::after {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: '\f062';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: var(--black);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+.progress-wrap::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: '\f062';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, #00c179,#00c179);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+.progress-wrap svg path {
+  fill: none;
+}
+.progress-wrap svg.progress-circle path {
+  stroke: var(--black);
+  stroke-width: 4;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap {
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.progress-wrap::after {
+  color: var(--black-blue);
+}
+.progress-wrap svg.progress-circle path {
+  stroke: var(--black-blue);
+}
+
+.container.is-max-desktop {
+  margin-top: 3rem;
+}
+/**/
+/*Sección descuentros*/
+#yellow-background {
+background-color: #ffe08a;
+display: grid;
+padding: 30px;
+}
+
+#ajuste-box {
+display: flex;
+align-items: center;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: space-around;
+}
+
+@media (max-width: 769px) {
+#imagenDescuentos {
+  width: 200px;
+
+}
+
+#hero-verde {
+  height: 550px;
+}
+
+#box-verde {
+  height: 450px;
+}
+}
+
+@media (max-width: 585px) {
+#hero-verde {
+  height: 600px;
+}
+
+#box-verde {
+  height: 500px;
+}
+}
+
+@media (max-width: 560px) {
+#hero-verde {
+  height: 650px;
+}
+
+#box-verde {
+  height: 550px;
+}
+}
+
+@media (max-width: 454px) {
+#hero-verde {
+  height: 700px;
+}
+
+#box-verde {
+  height: 600px;
+}
+}
+
+
+
+/**/
+/*Sección información desplegable*/
+.git-info {
+color: rgb(144, 38, 38);
+font-size: 12px;
+}
+
+.git {
+color: #333333;
+font-size: 15px;
+font-weight: 200;
+font-style: oblique;
+}
+
+.modules {
+max-width: 700px;
+margin: auto;
+}
+
+.module {
+border-bottom: 1px solid #ccc;
+padding: 1em;
+}
+
+.info-button {
+float: right;
+margin-top: -3em;
+}
+
+/**/
+/*Sección footer*/
+.logos_footer {
+height: 75px;
+}
+
+/**/
+/*Títulos en las cajas*/
+.titulosHeros {
+color: #333333;
+font-size: 25px;
+display: grid;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+/**/
+/*Secciónes con color de fondo*/
+.fondo-seccion{
+  background-color: #c49ee7;
+}
+/**/
+/*Sección presencial y online*/
+.borde-azul {
+border: 1px solid #7fafd5;
+padding: 10px;
+}
+
+.card-modificada {
+box-shadow: 0 0.5em 1em -0.125em #3e8ed0, 0 0 0 1px rgba(10, 10, 10, .02);
+background-color: #fff;
+border-radius: 0.25rem;
+
+color: #4a4a4a;
+max-width: 100%;
+position: relative;
+}
+
+/**/
+/*IDIOMAS*/

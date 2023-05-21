@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Cuatrovientos Idiomas es una academia de idiomas en Pamplona que ofrece cursos de inglés y francés. Aprende con nuestros profesores nativos y experimentados. Ofrecemos clases para todos los niveles, desde principiantes hasta avanzados. Contáctanos para más información.">
+  <meta name="author" content="Lucía_Juan_Mohammed">
+  <title>Cursos de Cuatrovientos Idiomas</title>
+  <link rel="icon" type="image/png" href="../images/logoPestaña.png">
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style1.css">
+  <!-- Incluimos El botón de subida -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
+  <!--AOS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Incluimos los estilos de Bulma -->
+  <!-- Incluimos los estilos de FullCalendar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+  <!-- Incluimos la librería de jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluimos la librería de FullCalendar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+  <link rel="stylesheet" href="../plugins/icofont/icofont.css">
+</head>
+
+<body>
+  <header class="has-background-primary has-text-weight-bold">
+    <div class="container mb-1">
+      <div class="columns is-gapless is-justify-content-space-between is-align-items-center " id="header-top-info">
+        <div class="column is-6-desktop is-4-tablet has-text-left-desktop has-text-centered-mobile">
+          <div class="header-top-info">
+            <a href="tel:+23-345-67890"><i class="icofont-ui-call mr-2"></i><span>+34 948 31 55 58</span></a>
+            <a href="mailto:idiomas@cuatrovientos.org"><i
+                class="icofont-email mr-2 ml-5"></i><span>idiomas@cuatrovientos.org</span></a>
+          </div>
+        </div>
+        <div class="columns is-4-desktop is-8-tablet has-text-centered-mobile redes-sociales-desktop ">
+          <div class=" column has-text-right-tablet ">
+            <a href="https://www.facebook.com/cuatrovientos.idiomas/?locale=es_ES"><i class="fab fa-facebook"></i></a>
+            <a href="https://es.linkedin.com/company/cuatrovientos-idiomas"><i class="icofont-linkedin"></i></a>
+            <a href="https://www.youtube.com/@alviento"><i class="fab fa-youtube"></i> </a>
+          </div>
+          <div class="column header-top-right has-text-right-tablet has-text-centered-mobile">
+            <a href="https://goo.gl/maps/9du5MJUYJKDumgRL6">
+              <p class="has-text-weight-bold "><i class="icofont-location-pin pr-1"></i><span>Localizanos</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand">
+        <div class="ml-6 is-centered  ">
+          <a href="../index.html">
+            <img id="logo4V" src="../images/logo4V.png" alt="Logo Principal" class="pt-1">
+          </a>
+        </div>
+        <div class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false"
+          data-target="navbarIndex">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navbarIndex" class="navbar-menu ">
+        <div class="navbar-end mr-6">
+          <a class="navbar-item" href="../index.html">
+            <span>INICIO</span>
+          </a>
+          <a class="navbar-item" href="#">
+            <span>CURSOS</span>
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">EXÁMENES OFICIALES</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./examenesOficialesIngles.html">Oxford y Cambridge</a>
+              <a class="navbar-item" href="./examenesOficialesFrances.html">DELF y DALF</a>
+            </div>
+          </div>
+          <a class="navbar-item" href="./Empresas.html">
+            <span>EMPRESAS</span>
+          </a>
+          <a href="./Matricula.html" class="button is-primary is-outlined mt-2 ml-2">
+            <span class="link-title">Matricúlate</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero  is-flex" id="portada">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 pt-0 ">
+            Cuatrovientos Idiomas
+          </h1>
+          <div class="subtitle is-3">
+            Nuestros Cursos de Idiomas
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de opciones de cursos -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <!-- Cursos en línea -->
+          <div class="column">
+            <div class="card" data-aos="fade-right">
+              <div class="card-image">
+                <figure class="image is-3by1">
+                  <img src="../images/FotosCursos/bandera1.jpg" alt="fotoBandera1">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-3">English courses</p>
+                <p class="subtitle is-6">Comienza un nuevo viaje de estudios</p>
+                <div class="container is-centered has-text-centered" data-aos="flip-up">
+                  <div class="tag is-link">Aprobado garantizado</div>
+                  <div class="tag is-info">Aprendizaje interactivo</div>
+                  <div class="tag is-info is-light">Los mejores profesores y profesoras</div>
+                </div>
+                <br>
+                <div class="modules" data-aos="flip-up">
+                  <div class="module">
+                    <h3>Examen Oxford</h3>
+                    <button class="info-button button is-light" id="javascript" onclick="showInfo(this)">+</button>
+                    <div class="module-info" id="javascript-info">Examen de competencia de inglés general de varios
+                      niveles que evalúa la capacidad de entender y comunicarse de manera efectiva en inglés, con un
+                      informe de tres niveles del MCER: B2, B1 y A2. La prueba cubre las cuatro habilidades: hablar,
+                      escuchar, leer y escribir</div>
+                  </div>
+                  <br>
+                  <div class="module">
+                    <h3>Exámenes Cambridge</h3>
+                    <button class="info-button button is-light" id="os" onclick="showInfo(this)">+</button>
+                    <div class="module-info" id="os-info">Los exámenes Cambridge son títulos reconocidos
+                      internacionalmente y certifican el nivel de inglés del estudiante. Son válidos en universidades y
+                      empresas de todo el mundo, lo que te puede abrir las puertas de nuevas oportunidades educativas o
+                      laborales.</div>
+                  </div>
+                </div>
+                <br>
+                <div class="has-text-centered">
+                  <a href="./examenesOficialesIngles.html" class="button is-info is-outlined" data-aos="flip-up">Saber
+                    más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card" data-aos="fade-left">
+              <div class="card-image">
+                <figure class="image is-3by1">
+                  <img src="../images/FotosCursos/bandera2.jpg" alt="fotoBandera">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-3">Cours de français</p>
+                <p class="subtitle is-6">Aprende en un ambiente interactivo y social</p>
+                <div class="content is-centered has-text-centered" data-aos="flip-up">
+                  <div class="tag is-link">Mejora tu pronunciación</div>
+                  <div class="tag is-info">Descubre una nueva cultura</div>
+                  <div class="tag is-info is-light">Desarrolla tus habilidades</div>
+                </div>
+                <div class="modules" data-aos="flip-up">
+                  <div class="module">
+                    <h3>Examen DELF</h3>
+                    <button class="info-button button is-light" id="databases" onclick="showInfo(this)">+</button>
+                    <div class="module-info" id="databases-info">El DELF es un examen oficial de francés que evalúa las
+                      habilidades lingüísticas. Este examen está reconocido internacionalmente y consta de cuatro
+                      niveles: A1, A2, B1 y B2.</div>
+                  </div>
+                  <br>
+                  <div class="module">
+                    <h3>Examen DALF</h3>
+                    <button class="info-button button is-light" id="git" onclick="showInfo(this)">+</button>
+                    <div class="module-info" id="git-info">
+                      El DALF es un examen de certificación de francés avanzado,
+                      que evalúa las habilidades lingüísticas de los candidatos en las áreas de comprensión oral y
+                      escrita, producción oral y escrita, y análisis de textos. El examen DALF está dividido en dos
+                      niveles: DALF C1 y DALF C2.</div>
+                  </div>
+                </div>
+                <br>
+                <div class="has-text-centered">
+                  <a href="./examenesOficialesFrances.html" class="button is-info is-outlined" data-aos="flip-up">Saber
+                    más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1 has-text-centered" data-aos="fade-down">Agenda Escolar</h1>
+        <div class="columns">
+          <div class="column is-half">
+            <div id="yellow-background" data-aos="zoom-out">
+              <div class="box has-text-centered" id="ajuste-box">
+                <p class="titulosHeros">Ofertas y Promociones</p>
+                <div class="columns">
+                  <div class="column is-half">
+                    <img src="../images/FotosCursos/descuentos.jpg" alt="Promociones" class="image"
+                      id="imagenDescuentos">
+                  </div>
+                  <div class="column is-half">
+                    <p class="subtitle is-6">Examen gratuito al comprometerte a realizar el curso completo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="column is-half">
+            <div class="container" data-aos="zoom-out">
+              <div class="columns is-centered">
+                <div class="column is-10">
+                  <div id="calendar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section">
+      <div class="hero is-success" id="hero-verde" data-aos="zoom-in-down">
+        <div class="hero-body">
+          <div class="box" id="box-verde">
+            <p class="titulosHeros">Información sobre Horarios y Precios</p>
+            <div class="columns">
+              <div class="column is-half">
+                <div class="message is-success">
+                  <div class="message-header">
+                    <p>HORARIOS</p>
+                  </div>
+                  <div class="message-body">
+                    Te invitamos a una clase completamente gratis en la que puedes comprobar nuestra metodología.
+                    Nuestro horario es de LUNES a JUEVES mañanas y tardes.
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <table class="table is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th> Horas </th>
+                      <th> Días/Semana </th>
+                      <th> Precio </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>50€</td>
+                    </tr>
+                    <tr>
+                      <td>1'5</td>
+                      <td>2</td>
+                      <td>75€</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="has-text-centered">
+                  <button class="button is-success is-outlined">Contáctanos para más información</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>>
+    <div class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="card-modificada" data-aos="fade-right">
+              <div class="card-content">
+                <div class="borde-azul">
+                  <div class="has-text-centered">
+                    <p class="title">Presencial</p>
+                  </div>
+                  <p class="subtitle">Aprende inglés en nuestras instalaciones</p>
+                  <div class="content">
+                    <ul>
+                      <li>Cursos enfocados en speaking o en gramática</li>
+                      <li>Prácticas en grupo y uno a uno</li>
+                      <li>Diploma al final del curso</li>
+                      <li>Examen de certificación oficial</li>
+                    </ul>
+                  </div>
+                  <figure class="image">
+                    <img src="../images/FotosCursos/presencial.jpg" alt="clasesPresenciales">
+                  </figure><br>
+                  <p class="control has-text-centered">
+                    <a href="./Matricula.html" class="button is-info is-outlined">Inscríbete</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card-modificada" data-aos="fade-left">
+              <div class="card-content">
+                <div class="borde-azul">
+                  <div class="has-text-centered">
+                    <p class="title">Online</p>
+                  </div>
+                  <p class="subtitle">Aprende inglés desde la comodidad de tu hogar</p>
+                  <div class="content">
+                    <ul>
+                      <li>Cursos enfocados en speaking o en gramática</li>
+                      <li>Prácticas en grupo y uno a uno</li>
+                      <li>Diploma al final del curso</li>
+                      <li>Examen de certificación oficial</li>
+                    </ul>
+                  </div>
+                  <figure class="image">
+                    <img src="../images/FotosCursos/online.jpg" alt="clasesOnline">
+                  </figure><br>
+                  <p class="control has-text-centered">
+                    <a href="./Matricula.html" class="button is-info is-outlined">Inscríbete</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="section-sm pb-0 border-top border-default is-centered has-text-centered-mobile has-background-primary">
+    <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <div class="container">
+      <div class="columns is-multiline is-justify-content-space-between">
+        <div class="column is-3-desktop">
+          <a class="mb-2 is-block" href="../index.html">
+            <img id="logo4VFooter" src="../images/logo4V.png" alt="Logo Cuatrovientos">
+          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2992407515208!2d-1.662482324748669!3d42.82429240564793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50929245c3a2c1%3A0xbcafdfb668104a91!2sCuatrovientos%20Idiomas!5e0!3m2!1ses!2ses!4v1683786441140!5m2!1ses!2ses"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+        </div>
+
+        <div class="column is-2-widescreen is-3-desktop is-6 mt-6">
+          <h6 class="mb-4">HORARIO SECRETARÍA</h6>
+          <ul class="list-unstyled footer-list">
+            <li>
+              <p>Curso Escolar</p>
+            </li>
+            <li>
+              <p>Lunes a viernes: 9:00 – 14:00 h.</p>
+            </li>
+            <li>
+              <p>Martes: 16:30 – 18:30 h.</p>
+            </li>
+            <li>
+              <p>Teléfono: 948 124129</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column is-2-widescreen is-4-desktop is-6 mt-6">
+          <h6 class="mb-4">DATOS DE CONTACTO</h6>
+          <ul class="list-unstyled footer-list">
+            <li>
+              <p>Av. de San Jorge, 2, 31012 Pamplona, Navarra</p>
+            </li>
+            <li>
+              <p>+34 948 31 55 58</p>
+            </li>
+            <li>
+              <p>idiomas@cuatrovientos.org</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column is-3-desktop has-text-centered mt-4">
+          <a> <img src="../images/logoInnovarse.png" alt="Logo Innovarse" class="logos_footer"></a>
+          <a><img src="../images/logosColabora.png" alt="Logos Colaborar" class="logos_footer"></a>
+          <a><img src="../images/logosColabora1.png" alt="Logos Colaborar1" class="logos_footer"></a>
+          <a><img src="../images/ODS.jpg" alt="ODS" class="logos_footer"></a>
+        </div>
+      </div>
+      <div
+        class=" container mb-1 has-text-centered has-text-centered-mobile has-background-primary is-12-desktop is-4-tablet is-gapless "
+        id="barraFooter">
+        <p class="content">&copy; 2023 - Design &amp; Develop By <a href="../index.html" target="_blank">Cuatrovientos
+            idiomas</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script src="../js/cursos.js"></script>
+
+
+</body>
+
+</html>

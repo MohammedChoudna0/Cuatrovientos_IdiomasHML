@@ -9,6 +9,11 @@
     <meta name="author" content="Lucía_Juan_Mohammed">
 
     <title>Cuatrovientos Idiomas</title>
+    <link rel="icon" type="image/png" href="../images/logoPestaña.png">
+    <!--boton lucia-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Font Awesome -->
@@ -23,11 +28,7 @@
     <link rel="stylesheet" href="../plugins/themify/css/themify-icons.css">
     <link rel="stylesheet" href="../plugins/icofont/icofont.css">
     <link rel="stylesheet" href="../css/style1.css">
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
-    <script src="../js/slick.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -64,7 +65,7 @@
         <nav class="navbar" id="navbar">
             <div class="navbar-brand">
                 <div class="ml-6 is-centered  ">
-                    <a href="#">
+                    <a href="../index.html">
                         <img id="logo4V" src="../images/logo4V.png" alt="Logo Principal" class="pt-1">
                     </a>
                 </div>
@@ -74,253 +75,93 @@
                     <span></span>
                     <span></span>
                 </div>
-
             </div>
-
-
             <div id="navbarIndex" class="navbar-menu ">
                 <div class="navbar-end mr-6">
-                    <a class="navbar-item" href="#">
-                        <span>INICIO</span>
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">CURSOS</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="#">Francés</a>
-                            <a class="navbar-item" href="#">Inglés</a>
-                        </div>
+                  <a class="navbar-item" href="../index.html">
+                    <span>INICIO</span>
+                  </a>
+                  <a class="navbar-item" href="./cursos.html">
+                    <span>CURSOS</span>
+                  </a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">EXÁMENES OFICIALES</a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item" href="./examenesOficialesIngles.html">Oxford y Cambridge</a>
+                      <a class="navbar-item" href="./examenesOficialesFrances.html">DELF y DALF</a>
                     </div>
-
-
-                    <a class="navbar-item" href="#">
-                        <span>NUESTRO EQUIPO</span>
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">EXÁMENES OFICIALES</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="#">1</a>
-                            <a class="navbar-item" href="#">2</a>
-                        </div>
-                    </div>
-                    <a class="navbar-item" href="#">
-                        <span>EMPRESAS</span>
-                    </a>
-
-                    <a href="#" class="button is-primary is-outlined mt-2 ml-2">
-                        <span class="link-title">Matriculate</span>
-                    </a>
+                  </div>
+                  <a class="navbar-item" href="./Empresas.html">
+                    <span>EMPRESAS</span>
+                  </a>
+                  <a href="#" class="button is-primary is-outlined mt-2 ml-2">
+                    <span class="link-title">Matricúlate</span>
+                  </a>
                 </div>
-            </div>
+              </div>
         </nav>
     </header>
-    <section class="hero is-primary is-medium">
+    <div class="hero is-primary is-medium" id="portadaMatricula">
         <div class="hero-body">
-            <p class="title">
-                Primary hero
+            <p class="title has-text-centered has-text-danger-dark has-text-weight-bold is-size-2">
+                MATRICULATE AHORA
             </p>
-            <p class="subtitle">
-                Primary subtitle
+            <p class=" highlight has-text-weight-bold is-6 has-text-centered">
+                "APRENDER UN IDIOMA ES TENER UNA VENTANA MÁS DESDE LA QUE OBSERVAR EL MUNDO"
             </p>
         </div>
-    </section>
+    </div>
+
+
+
+
     <section class="section">
-        <div class="container">
-            <div class="card mr-2">
-                <h2 class="title has-text-centered is-3">Formulario a rellenar</h2>
-                <form class="form mr-3" id="form">
-                    <div id="formulario1">
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Nombre</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="text" placeholder="Nombre" required>
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-user"></i>
-                                        </span>
-                                    </p>
-                                </div>
+        <div class="container  ">
+            <div class="card mr-2 has-background-primary ">
+                <form class="formulario active pb-6 pr-6 pl-3 pt-3" id="form1">
+                    <h2 class="title has-text-centered is-3">DATOS PERSONALES</h2>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Nombre</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Nombre" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-user"></i>
+                                    </span>
+                                </p>
                             </div>
                         </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Apellido 1</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="text" placeholder="Apellido 1" required>
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-user"></i>
-                                        </span>
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Apellido 1</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Apellido 1" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-user"></i>
+                                    </span>
+                                </p>
                             </div>
                         </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Apellido 2</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="text" placeholder="Apellido 2">
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-user"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Apellido 2</label>
                         </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Fecha de Nacimiento</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="date" placeholder="Fecha de Nacimiento" required id="fechaNacimiento">
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-calendar-alt"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div id="camposTutor">
-                            <p class="has-text-centered">*******************************************************************************************************************************************************</p>
-
-                            <h2 class=" has-text-centered is-5 has-text-weight-bold mb-2">Formulario para menores de edad (Rellena los datos de tus padres o de tu tutor)</h2>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Nombre</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="text" placeholder="Nombre" required>
-                                            <span class="icon is-small is-left">
-                                                <i class="icofont-user"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Apellido 1</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="text" placeholder="Apellido 1" required>
-                                            <span class="icon is-small is-left">
-                                                <i class="icofont-user"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Apellido 2</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="text" placeholder="Apellido 2">
-                                            <span class="icon is-small is-left">
-                                                <i class="icofont-user"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Email padres o tutor</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="email" placeholder="Email" required>
-                                            <span class="icon is-small is-left">
-                                                <i class="icofont-email"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal mb-3">
-                                <div class="field-label is-normal">
-                                    <label class="label">Móvil padres o tutor</label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control is-expanded has-icons-left">
-                                            <input class="input" type="text" placeholder="Teléfono" required
-                                                pattern="[0-9]{9}" maxlength="9">
-                                            <span class="icon is-small is-left">
-                                                <i class="icofont-phone"></i>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="has-text-centered">*******************************************************************************************************************************************************</p>
-
-                        </div>
-
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Email</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="email" placeholder="Email" required>
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-email"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Teléfono</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="text" placeholder="Teléfono" required
-                                            pattern="[0-9]{9}" maxlength="9">
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-phone"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Dirección</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded has-icons-left">
-                                        <input class="input" type="text" placeholder="Dirección" required>
-                                        <span class="icon is-small is-left">
-                                            <i class="icofont-location-pin"></i>
-                                        </span>
-                                    </p>
-                                </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Apellido 2">
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-user"></i>
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -359,13 +200,179 @@
                     </div>
                     <div class="field is-horizontal">
                         <div class="field-label is-normal">
+                            <label class="label">Fecha de Nacimiento</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="date"  required
+                                        id="fechaNacimiento">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </span>
+                                </p>
+                                <div id="mensajeFechaInvalida" style="display: none; color: red;">La fecha de nacimiento es inválida. Debes tener al menos 16 años.</div>                    </div>
+
+                            </div>
+                        </div>
+
+                        
+                        <div id="camposTutor">
+                            <p class="has-text-centered">
+                                *******************************************************************************************************************************************************
+                            </p>
+
+                            <h2 class=" has-text-centered is-5 has-text-weight-bold mb-2">Formulario para menores de
+                                edad (Rellena los
+                                datos
+                                de tus padres o de tu tutor)</h2>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Nombre</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Nombre" >
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-user"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Apellido 1</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Apellido 1" >
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-user"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Apellido 2</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Apellido 2">
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-user"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Email padres o tutor</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="email" placeholder="Email" >
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-email"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal mb-3">
+                                <div class="field-label is-normal">
+                                    <label class="label">Móvil padres o tutor</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Teléfono" 
+                                                pattern="[0-9]{9}" maxlength="9">
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-phone"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="has-text-centered">
+                                *******************************************************************************************************************************************************
+                            </p>
+
+                        </div>
+
+
+                        <div id="camposMayores">
+
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Email</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="email" placeholder="Email" required>
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-email"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Teléfono</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Teléfono" required
+                                                pattern="[0-9]{9}" maxlength="9">
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-phone"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal ">
+                                <div class="field-label is-normal">
+                                    <label class="label">Dirección</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has-icons-left">
+                                            <input class="input" type="text" placeholder="Dirección" required>
+                                            <span class="icon is-small is-left">
+                                                <i class="icofont-location-pin"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </form>
+
+                <form class="formulario  pb-6 pr-6 pl-3 pt-3" id="form2">
+                    <h2 class="title has-text-centered is-3">DATOS SOBRE EL CURSO</h2>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
                             <label class="label">¿Has sido alumn@ de Cuatrovientos Idiomas con anterioridad?</label>
                         </div>
                         <div class="field-body">
                             <div class="field">
                                 <div class="control">
-                                    <div class="select">
-                                        <select>
+                                    <div class="select" >
+                                        <select >
                                             <option>No</option>
                                             <option>del curso 21-22</option>
                                             <option>del curso 20-21</option>
@@ -401,7 +408,7 @@
                         <div class="field-body">
                             <div class="field">
                                 <div class="control">
-                                    <div class="select">
+                                    <div class="select" >
                                         <select>
                                             <option>No</option>
                                             <option>FPB</option>
@@ -440,7 +447,7 @@
                             <div class="field">
                                 <div class="control">
                                     <div class="select">
-                                        <select id="idiomaSelect" onchange="actualizarNiveles()">
+                                        <select id="idiomaSelect" onchange="actualizarNiveles()" >
                                             <option selected disabled hidden>Selecciona..</option>
                                             <option value="ingles">Inglés</option>
                                             <option value="frances">Francés</option>
@@ -450,51 +457,58 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="field is-horizontal mt-3">
                         <div class="field-label is-normal">
-                          <label class="label">Que nivel tienes :</label>
+                            <label class="label">Que nivel tienes :</label>
                         </div>
                         <div class="field-body">
-                          <div class="field">
-                            <div class="control">
-                              <div class="select">
-                                <select id="nivelSelect">
-                                  <option selected disabled hidden>Selecciona..</option>
-                                  <!-- Opciones de niveles se generarán dinámicamente -->
-                                </select>
-                              </div>
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <select id="nivelSelect" >
+                                            <option selected disabled hidden>Selecciona..</option>
+                                            <!-- Opciones de niveles se generarán dinámicamente -->
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="has-text-weight-bold">Si aún no sabes qué nivel de idioma posees, podrás
+                                    saberlo mediante
+                                    nuestra prueba de nivel gratuita. <a href="../index.html#SeccionPruebaNivel">Pincha
+                                        aquí</a></p>
                             </div>
-                            <p class="has-text-weight-bold">Si aún no sabes qué nivel de idioma posees, podrás saberlo mediante nuestra prueba de nivel gratuita. <a href="../index.html#SeccionPruebaNivel">Pincha aquí</a></p>
-                          </div>
                         </div>
-                      </div>
-                      <div class="field is-horizontal">
+                    </div>
+                    <div class="field is-horizontal">
                         <div class="field-label is-normal">
-                          <label class="label">Franja horaria disponible </label>
+                            <label class="label">Franja horaria disponible </label>
                         </div>
                         <div class="field-body">
-                          <div class="field">
-                            <div class="control">
-                              <div class="select">
-                                <select id="franjaSelect">
-                                  <option selected disabled hidden>Selecciona..</option>
-                                  <!-- Las opciones de franjas horarias se generarán dinámicamente -->
-                                </select>
-                              </div>
+                            <div class="field">
+                                <div class="control">
+                                    <div class="select">
+                                        <select id="franjaSelect" >
+                                            <option selected disabled hidden>Selecciona..</option>
+                                            <!-- Las opciones de franjas horarias se generarán dinámicamente -->
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                      <div class="field is-horizontal">
+                    </div>
+                </form>
+
+                <form class="formulario  pb-6 pr-6 pl-3 pt-3" id="form3">
+                    <h2 class="title has-text-centered is-3">DATOS DE PAGO</h2>
+                    <div class="field is-horizontal">
                         <div class="field-label is-normal">
                             <label class="label">Paga</label>
                         </div>
                         <div class="field-body">
                             <div class="field">
                                 <p class="control is-expanded mb-1 ">
-                                    <input type="radio" name="pago" value="alumno">Alumno
-            
+                                    <input type="radio" name="pago" value="alumno" required>Alumno
+
                                 </p>
                                 <p class="control is-expanded mb-1">
                                     <input type="radio" name="pago" value="alumno">Empresa donde trabajo
@@ -515,8 +529,8 @@
                         <div class="field-body">
                             <div class="field">
                                 <p class="control is-expanded mb-1 ">
-                                    <input type="radio" name="tipo" value="tipo">Mensual
-            
+                                    <input type="radio" name="tipo" value="tipo" required>Mensual
+
                                 </p>
                                 <p class="control is-expanded  mb-1">
                                     <input type="radio" name="tipo" value="tipo">Completo
@@ -525,98 +539,129 @@
                         </div>
                     </div>
 
-                
 
-                         
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Titular de la cuenta bancaria</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <p class="control is-expanded has-icons-left">
-                            <input class="input" type="text" placeholder="Nombre y Apellidos" required>
-                            <span class="icon is-small is-left">
-                                <i class="icofont-user"></i>
-                            </span>
-                        </p>
-                        <p class="has-text-weight-bold">DATOS BANCARIOS
-                            Para domiciliar el pago o pagos del curso mediante recibo en cuenta bancaria,  es obligatorio cumplimentar la autorización SEPA, rellenando para ello los siguientes campos:</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Email del titular</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control is-expanded has-icons-left">
-                                <input class="input" type="email" placeholder="Email" required>
-                                <span class="icon is-small is-left">
-                                    <i class="icofont-email"></i>
-                                </span>
-                            </p>
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Titular de la cuenta bancaria</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" placeholder="Nombre y Apellidos" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-user"></i>
+                                    </span>
+                                </p>
+                                <p class="has-text-weight-bold">DATOS BANCARIOS
+                                    Para domiciliar el pago o pagos del curso mediante recibo en cuenta bancaria, es
+                                    obligatorio
+                                    cumplimentar la autorización SEPA, rellenando para ello los siguientes campos:</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-
-
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                      <label class="label">Número de cuenta bancaria</label>
-                    </div>
-                    <div class="field-body">
-                      <div class="field">
-                        <p class="control is-expanded has-icons-left">
-                          <input class="input" type="text" placeholder=" Por ejemplo: ES20 5678 9785 37 1512789187" required  pattern="ES\d{22}" maxlength="24">
-                          <span class="icon is-small is-left">
-                            <i class="icofont-credit-card"></i>
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Autorizo y acepto las condiciones mencionadas anteriormente</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control is-expanded mb-1 ">
-                                <input type="radio" name="condiciones" value="condiciones">Sí
-                            </p>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Email del titular</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="email" placeholder="Email" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-email"></i>
+                                    </span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="has-text-centered mt-4 pb-4">
-                        <button type="submit" class="button is-warning is-medium is-focused" id="btn-siguiente">
-                            <span class="icon">
-                                <i class="fas fa-chevron-right"></i>
-                            </span>
-                            <span>Enviar</span>
-                        </button>
-                    </div>
-             
 
+
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Número de cuenta bancaria</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text"
+                                        placeholder=" Por ejemplo: ES20 5678 9785 37 1512789187" required
+                                        pattern="ES\d{22}" maxlength="24">
+                                    <span class="icon is-small is-left">
+                                        <i class="icofont-credit-card"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
+                <form class="formulario  pb-6 pr-6 pl-3 pt-3" id="form4">
+                    <h2 class="title has-text-centered is-3">AUTORIZACIÓN Y CONSENTIMINENTO</h2>
+
+                    <p class="ml-6 ">En cumplimiento de la normativa vigente en materia de protección de datos de
+                        carácter personal,
+                        INSTITUTO CUATROVIENTOS, S. COOP. (en adelante CUATROVIENTOS) le informa que los datos de
+                        carácter personal
+                        que nos proporcione al completar el formulario serán objeto de tratamiento y recogidos en un
+                        fichero de
+                        datos cuyo responsable es CUATROVIENTOS en cuya sede (Avda. San Jorge, 6. 31012 Pamplona) podrá
+                        ejercer su
+                        derecho de acceso, rectificación, cancelación y oposición al tratamiento de sus datos
+                        personales, en los
+                        términos y condiciones previstos en la propia normativa vigente en materia de protección de
+                        datos (Ley
+                        Orgánica 15/99 de Protección de Datos de carácter personal de 13 de diciembre). La recogida de
+                        sus datos se
+                        lleva a cabo con la finalidad principal de poder prestarle el servicio requerido, remitirle
+                        avisos de
+                        formación y servicios posteriores, y, en general, información de interés, propio o de terceros
+                        relacionada
+                        con los servicios de formación que se ofertan.
+
+                        Por tanto, </p>
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Autorizo y acepto las condiciones mencionadas anteriormente</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded mb-1 ">
+                                    <input type="radio" name="condiciones" value="condiciones" class="mt-3" required >Sí
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </div>
+        <div class="button-container">
+            <button id="btn-volver" disabled class="ml-6 ">Volver</button>
+            <button id="btn-siguiente" class="mr-6 ">Siguiente</button>
+        </div>
+
+
     </section>
 
 
-    <footer class="section-sm mt-6 border-top border-default is-centered has-text-centered-mobile">
+
+
+
+
+    <footer class="section-sm mt-6 border-top border-default is-centered has-text-centered-mobile has-background-primary">
         <div class="container">
-            <div class="scroll-to-top">
-                <a href="#" class="scroll-link">
-                    <i class="fas fa-arrow-circle-up"></i>
-                </a>
+            <div class="progress-wrap">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                  <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
             </div>
             <div class="columns is-multiline is-justify-content-space-between">
                 <div class="column is-3-desktop">
-                    <a class="mb-2 is-block" href="#">
+                    <a class="mb-2 is-block" href="../index.html">
                         <img id="logo4VFooter" src="../images/logo4V.png" alt="Logo Cuatrovientos">
                     </a>
                     <iframe
@@ -655,9 +700,7 @@
                         <li>
                             <p>idiomas@cuatrovientos.org</p>
                         </li>
-                        <li>
-                            <p>Contactar vía formulario</p>
-                        </li>
+                        
 
                     </ul>
                 </div>
@@ -671,29 +714,19 @@
             </div>
             <div class=" container mb-1 has-text-centered has-text-centered-mobile has-background-primary is-12-desktop is-4-tablet is-gapless "
                 id="barraFooter">
-                <p class="content">&copy; 2023 - Design &amp; Develop By <a href="#" target="_blank">Cuatrovientos
+                <p class="content">&copy; 2023 - Design &amp; Develop By <a href="../index.html" target="_blank">Cuatrovientos
                         idiomas</a>
                 </p>
             </div>
+        </div>
+        
 
     </footer>
-    <script src="../js/JavaScript.js"></script>
-    <script>// Obtener referencia al campo de entrada DNI/NIE
-        const dniInput = document.getElementById('dniInput');
-        
-        // Expresión regular para validar el formato del DNI/NIE
-        const dniRegex = /^[XYZ]?([0-9]{8})([A-Z])$/i;
-        
-        // Validar la entrada del DNI/NIE al perder el foco del campo
-        dniInput.addEventListener('blur', () => {
-          const dniValue = dniInput.value.trim();
-          if (dniRegex.test(dniValue)) {
-            dniInput.classList.remove('is-danger'); // Remover clase de estilo para indicar error
-          } else {
-            dniInput.classList.add('is-danger'); // Agregar clase de estilo para indicar error
-          }
-        });
-        </script>
+        <script src="../js/matricula.js"></script>
+
+
+
+
 
 
 
